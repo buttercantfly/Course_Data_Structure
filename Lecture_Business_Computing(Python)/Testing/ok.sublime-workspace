@@ -1,0 +1,338 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tes",
+				"test1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": " #define led_pin 11 <-- 將11腳位插入的東西設成led_pin (led腳位)\n#define flex_pin A0 <-- 將A0腳位插入的東西設成falex_pin (彎曲感應器腳位)\n\nvoid setup()\n{\n  Serial.begin(115200);\n  pinMode(led_pin, OUTPUT);\n}\n\n//上面的code是在設定輸出環境不用管\n\nvoid loop()\n{\n  int flex_value = analogRead(flex_pin); <-- 讀取flex_pin的訊號\n  int led_value = map(flex_value, 0, 1023, 0, 255); <-- 決定led的讀取方式\n  analogWrite(led_pin, led_value); <--底下都是在設定怎樣亮燈\n  Serial.println(flex_value);\n  Serial.println(led_value);\n  Serial.println(\"-------------\");\n  delay(500);\n}",
+			"settings":
+			{
+				"buffer_size": 500,
+				"line_ending": "Windows",
+				"name": "#define led_pin 11 <"
+			}
+		},
+		{
+			"contents": "Arduino: 1.8.15 (Windows 10), Board: \"Arduino Nano, ATmega328P (Old Bootloader)\"\n\nSketch uses 2588 bytes (8%) of program storage space. Maximum is 30720 bytes.\n\nGlobal variables use 202 bytes (9%) of dynamic memory, leaving 1846 bytes for local variables. Maximum is 2048 bytes.\n\nAn error occurred while uploading the sketch\n\nC:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr/bin/avrdude -CC:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr/etc/avrdude.conf -v -patmega328p -carduino -PCOM3 -b57600 -D -Uflash:w:C:\\Users\\sml89\\AppData\\Local\\Temp\\arduino_build_903559/Serial.ino.hex:i \n\n\n\navrdude: Version 6.3-20190619\n\n         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/\n\n         Copyright (c) 2007-2014 Joerg Wunsch\n\n\n\n         System wide configuration file is \"C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr/etc/avrdude.conf\"\n\n\n\n         Using Port                    : COM3\n\n         Using Programmer              : arduino\n\n         Overriding Baud Rate          : 57600\n\n\n\nThis report would have more information with\n\"Show verbose output during compilation\"\noption enabled in File -> Preferences.\n",
+			"settings":
+			{
+				"buffer_size": 1124,
+				"line_ending": "Windows",
+				"name": "Arduino: 1.8.15 (Windows 10), Board: \"Arduino Nano"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"run",
+				"Debugger: Run Command"
+			],
+			[
+				"space",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"de",
+				"Debugger: Open"
+			],
+			[
+				"debugg",
+				"Debugger: Open"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"auto",
+				"AutoFileName: Default Settings"
+			],
+			[
+				"new ",
+				"Build: New Build System"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/sml89/OneDrive/文件/GitHub",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning/Lecture_Business_Computing(Python)",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning/Lecture_Business_Computing(Python)/Homeworks",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning/Lecture_Business_Computing(Python)/Testing",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning/Lecture_Data_Structure"
+	],
+	"file_history":
+	[
+		"/C/Users/sml89/OneDrive/桌面/大二上課程/資料結構/HW5/remove/CA5_remove_max_version.cpp",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning/Lecture_Data_Structure/Testing/s.cpp",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning/Lecture_Business_Computing(Python)/Testing/ok.sublime-project",
+		"/C/Users/sml89/OneDrive/文件/GitHub/Learning/Lecture_Business_Computing(Python)/Testing/tester.cpp",
+		"/C/Users/sml89/OneDrive/桌面/C++ Workspaces/DS_CA2/HANDIN/Date.cpp",
+		"/C/Users/sml89/OneDrive/桌面/C++ Workspaces/Helloworld.cpp",
+		"/C/Users/sml89/OneDrive/桌面/C++ Workspaces/Test/Hello world.cpp",
+		"/C/Users/sml89/AppData/Roaming/Sublime Text 3/Packages/AutoFileName/autofilename.sublime-settings",
+		"/C/Users/sml89/OneDrive/桌面/C++ Workspaces/DS_CA2/HANDIN/TestDate.cpp",
+		"/C/Users/sml89/AppData/Roaming/Sublime Text 3/Packages/User/Compile_settings.sublime-build"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#define led_pin 11 <",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1124,
+								1124
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Arduino: 1.8.15 (Windows 10), Board: \"Arduino Nano",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Debugger":
+	{
+		"height": 271.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 105.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ok.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 600.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\sml89\\OneDrive\\文件\\GitHub"
+		}
+	],
+	"settings":
+	{
+		"debug.configurations":
+		[
+			{
+				"name": "<NAME>",
+				"type": "<CUSTOM>",
+				"request": "launch|attach"
+			},
+		]
+	}
+}
